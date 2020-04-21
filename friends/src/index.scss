@@ -1,0 +1,148 @@
+html {
+  height: calc(100% - 3px);
+}
+
+body {
+  background: linear-gradient(45deg, rgb(161, 28, 5) 0%, rgb(11, 124, 20) 100%);
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Container {
+  color: white;
+
+  .Nav {
+    background-color: rgba(0, 0, 0, 0.33);
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    border-radius: 10px;
+    margin: 2px auto 50px auto;
+    padding: 2px 0px;
+
+    a {
+      border-radius: 10px;
+      width: 15%;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      font-size: 12px;
+
+      &:hover {
+        color: whitesmoke;
+        background-color: #4682b4;
+      }
+      &:active {
+        color: black;
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+
+  .LoginPage {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.66);
+    padding: 40px 0px;
+    width: 500px;
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+
+    form {
+      display: inline-block;
+      line-height: 1.8rem;
+      width: 200px;
+    }
+
+    h2 {
+      line-height: 1rem;
+    }
+  }
+
+  .FriendsList {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.66);
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 20px;
+
+    .ListOfFriends {
+      padding: 10px 0px;
+      max-height: 500px;
+      overflow: auto;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .friends:hover {
+        background-color: #4682b4;
+      }
+
+      div {
+        margin: 5px auto;
+        border: 1px grey solid;
+        border-radius: 20px;
+        width: 90%;
+
+        h4 {
+          line-height: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .AddFriend {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.66);
+    padding: 25px 0px;
+    width: 500px;
+    margin: 0px auto;
+    text-align: center;
+
+    form {
+      display: inline-block;
+      line-height: 1.8rem;
+      width: 200px;
+      margin: 0px auto;
+      .addBtn {
+        border-radius: 10px;
+        background-color: green;
+        margin-top: 10px;
+        color: white;
+      }
+      .addBtn:hover {
+        background-color: rgb(35, 197, 13);
+      }
+    }
+  }
+
+  .DeleteFriend {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.66);
+    padding: 25px 0px;
+    width: 400px;
+    margin: 0px auto;
+    text-align: center;
+
+    form {
+      display: inline-block;
+      line-height: 1.8rem;
+      width: 200px;
+      .deleteBtn {
+        border-radius: 10px;
+        background-color: rgb(153, 12, 12);
+        margin-top: 10px;
+        color: white;
+      }
+      .deleteBtn:hover {
+        background-color: rgb(223, 13, 13);
+      }
+    }
+  }
+}
